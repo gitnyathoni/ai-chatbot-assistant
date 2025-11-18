@@ -9,3 +9,4 @@ class Chatbot:
         reply = resp.choices[0].message.content
         self.history.append({"role": "assistant", "content": reply})
         return reply
+streaming support
