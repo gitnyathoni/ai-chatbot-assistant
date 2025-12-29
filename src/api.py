@@ -7,3 +7,4 @@ class ChatRequest(BaseModel):
 @app.post("/chat")
 async def chat(req: ChatRequest):
     return {"reply": "Hello from AI!", "session": req.session_id}
+rate limiting middleware
